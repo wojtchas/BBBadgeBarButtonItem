@@ -80,6 +80,8 @@
     self.badge.frame = CGRectMake(self.badgeOriginX, self.badgeOriginY, minWidth + padding, minHeight + padding);
     self.badge.layer.cornerRadius = (minHeight + padding) / 2;
     self.badge.layer.masksToBounds = YES;
+    self.badge.layer.borderColor = [UIColor whiteColor];
+    self.badge.layer.borderWidth = 1;
 }
 
 // Handle the badge changing value
